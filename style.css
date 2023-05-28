@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#game{
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+          /* Makes the game border black */
+  margin: auto; 
+          /* Centres the screen */
+  overflow: hidden; 
+          /* Stops the animations from overflowing */
+  background-color: lightblue;
+          /* Makes the background blue */
+}
+
+
+#block{
+  width: 50px;
+  height: 500px; 
+  background-color: limegreen;
+          /* Makes the blocks lime green */ 
+  position: relative;
+  left: 400px;
+  animation: block 2s infinite linear; 
+          /* Movement of the blocks */
+}
+
+@keyframes block{
+  0%{left:400px} 
+          /* Where they start */
+  100%{left:-50px} 
+          /* Where they end */
+}
+
+#hole{
+  width:50px;
+  height: 150px;
+  background-color: lightblue;
+          /* Makes the gap sky blue */ 
+  position: relative;
+  left: 400px;
+  top: -500px; 
+          /* Pulls the block down */
+  animation: block 2s infinite linear;
+}
+
+#character{
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+          /* Makes the character yellow */
+  position: absolute;
+  top: 100px;
+  border-radius: 50%; 
+          /* Makes the character a circle */
+  
+}
